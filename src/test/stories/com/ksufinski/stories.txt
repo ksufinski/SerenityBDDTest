@@ -1,0 +1,18 @@
+Scenario Show suggestion the same as searching input
+
+Given I have opened home page
+When I have searched for 'smth'
+Then Suggestions should contains 'smth'
+
+
+
+Scenario Show items in favorites
+
+Given I have opened home page
+    And I have logged in
+When I have searched for item
+    And when I applied filter
+    And when I have chosen item by number in list
+    And when I have added item for favorites
+    And when I have opened favorites
+Then Item should be in favorites
